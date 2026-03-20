@@ -383,7 +383,7 @@ export function Hero() {
                 alt="Car goal"
                 fill
                 className="object-contain object-bottom"
-                sizes="100vw"
+                sizes="(max-width: 1024px) 100vw, 50vw"
                 priority
               />
             </div>

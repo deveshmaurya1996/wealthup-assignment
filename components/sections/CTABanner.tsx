@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import { images } from "@/public/assets";
 
@@ -7,55 +6,70 @@ export function CTABanner() {
     <section className="py-16 lg:py-24">
       <div className="container">
         <div
-          className="relative min-h-[191px] w-full overflow-hidden rounded-[50px] p-px md:flex-row"
+          className="relative min-h-[191px] w-full overflow-hidden rounded-[50px] p-px"
           style={{
             background: "linear-gradient(180deg, #294F7C 0%, #F8FAFC 60.22%)",
           }}
         >
-          <div className="relative h-full min-h-[189px] w-full overflow-hidden rounded-6xl bg-white p-8 md:px-12">
-            <Image
-              src={images.perlin}
-              alt=""
-              fill
-              className="object-cover"
-              sizes="100vw"
-              priority={false}
+          <div
+            className="relative h-full min-h-[189px] w-full overflow-hidden rounded-[48px] p-8 md:px-12"
+            style={{ backgroundColor: "#EFF6FF" }}
+          >
+            <div
+              className="absolute inset-0"
+              style={{ backgroundColor: "#EFF6FF", zIndex: 0 }}
             />
-            <div className="absolute inset-0 z-1 flex overflow-hidden">
-              <div className="relative h-full w-1/2">
-                <Image
-                  src={images.ellipse23}
-                  alt=""
-                  fill
-                  className="object-cover"
-                  sizes="50vw"
-                />
-              </div>
-            </div>
-            <div className="relative z-10 flex min-h-[189px] w-full flex-col items-center justify-center gap-6 md:flex-row md:items-center md:justify-between">
+
+            <div
+              className="absolute inset-0"
+              style={{
+                backgroundImage: `url(${images.perlin})`,
+                backgroundRepeat: "repeat",
+                backgroundSize: "auto",
+                backgroundPosition: "center",
+                opacity: 0.6,
+                zIndex: 1,
+              }}
+            />
+
+            <div
+              className="absolute inset-0"
+              style={{
+                zIndex: 2,
+                backgroundImage: `url(${images.ellipse23})`,
+                backgroundRepeat: "no-repeat",
+                backgroundSize: "contain",
+                backgroundPosition: "left center",
+                opacity: 0.7,
+              }}
+            />
+
+            <div
+              className="relative flex min-h-[189px] w-full flex-col items-center justify-center gap-6 md:flex-row md:items-center md:justify-between"
+              style={{ zIndex: 3 }}
+            >
               <div className="flex flex-col items-start text-left md:w-1/2">
-                <div className="flex flex-col">
-                  <h2
-                    className="text-4xl font-semibold leading-none tracking-normal"
-                    style={{
-                      fontFamily: "var(--font-inter)",
-                      color: "#294F7C",
-                    }}
-                  >
-                    Your Goals Deserve a Plan
-                  </h2>
-                  <p
-                    className="mt-4 max-w-xl text-xl leading-none tracking-normal"
-                    style={{
-                      fontFamily: "var(--font-urbanist)",
-                      fontWeight: 400,
-                      color: "#294F7C",
-                    }}
-                  >
-                    Start your personalized investment roadmap in minutes.
-                  </p>
-                </div>
+                <h2
+                  className="text-4xl font-semibold leading-none tracking-normal"
+                  style={{
+                    fontFamily: "var(--font-inter)",
+                    color: "#294F7C",
+                  }}
+                >
+                  Your Goals Deserve a Plan
+                </h2>
+                <p
+                  className="mt-4 max-w-xl text-xl leading-none tracking-normal"
+                  style={{
+                    fontFamily: "var(--font-urbanist)",
+                    fontWeight: 400,
+                    color: "#294F7C",
+                  }}
+                >
+                  Start your personalized investment roadmap in minutes.
+                </p>
               </div>
+
               <div className="flex shrink-0 items-center justify-center md:w-1/2 md:justify-end">
                 <Link
                   href="/signup"

@@ -102,12 +102,12 @@ export function InfoCards() {
         </p>
 
         <div className="relative mt-16">
-          {/* Carousel arrows */}
           <button
             type="button"
             onClick={scrollPrev}
             className="absolute -left-6 top-1/2 z-10 flex h-12 w-12 -translate-y-1/2 items-center justify-center rounded-full border border-primary bg-primary text-primary-foreground transition-colors hover:bg-primary-hover md:-left-10 lg:-left-14"
             aria-label="Previous card"
+            suppressHydrationWarning
           >
             <ChevronLeft />
           </button>
@@ -116,6 +116,7 @@ export function InfoCards() {
             onClick={scrollNext}
             className="absolute -right-6 top-1/2 z-10 flex h-12 w-12 -translate-y-1/2 items-center justify-center rounded-full border border-primary bg-primary text-primary-foreground transition-colors hover:bg-primary-hover md:-right-10 lg:-right-14"
             aria-label="Next card"
+            suppressHydrationWarning
           >
             <ChevronRight />
           </button>

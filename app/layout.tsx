@@ -57,7 +57,6 @@ export default function RootLayout({
               fill
               className="object-cover object-center"
               sizes="100vw"
-              priority
             />
           </div>
           <div

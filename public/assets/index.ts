@@ -24,7 +24,7 @@ export const images = {
   home: `${IMAGES_BASE}/home.png`,
   target: `${IMAGES_BASE}/target.png`,
   perlin: `${IMAGES_BASE}/Perlin.png`,
-  ellipse23: `${IMAGES_BASE}/Ellipse 23.png`,
+  ellipse23: `${IMAGES_BASE}/Ellipse23.png`,
   elipsis1: `${IMAGES_BASE}/elipsis1.png`,
 } as const;
 
