@@ -43,7 +43,7 @@ export function Hero() {
         <div className="grid gap-12 lg:grid-cols-2 lg:gap-8">
           <div className="flex flex-col">
             <div
-              className="mb-8 inline-flex h-[30px] w-auto items-center gap-2 self-start rounded-[20px] px-4"
+              className="mb-8 inline-flex h-[30px] w-auto items-center gap-2 self-start rounded-[20px] border-2 border-white px-4"
               style={{ background: "#FFFFFF4D" }}
             >
               <div className="flex -space-x-1.5">
@@ -301,7 +301,7 @@ export function Hero() {
                   </button>
                 </div>
 
-                <div className="flex flex-col items-center justify-center gap-2 sm:items-start">
+                <div className="flex flex-col items-center justify-center gap-2 self-stretch sm:items-start">
                   <div
                     className="flex h-[80px] w-full max-w-[180px] flex-col items-center justify-center gap-[10px] rounded-[15px] border px-4"
                     style={{
@@ -336,7 +336,7 @@ export function Hero() {
                       ₹ {lumpSum}
                     </p>
                   </div>
-                  <p className="text-center text-xs font-medium text-muted-foreground">
+                  <p className="w-full text-center text-xs font-medium text-muted-foreground">
                     OR
                   </p>
                   <div

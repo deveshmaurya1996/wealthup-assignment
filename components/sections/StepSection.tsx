@@ -124,8 +124,8 @@ export function StepSection() {
                           key={i}
                           className="h-2 rounded-full transition-all"
                           style={{
-                            width: isActive ? 120 : 50,
-                            background: isActive ? "#294F7C" : "#EAF4FB",
+                            width: isActive ? 250 : 50,
+                            background: isActive ? "#294F7C" : "#CFE6F7",
                           }}
                         />
                       );
